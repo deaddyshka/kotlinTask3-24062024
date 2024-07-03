@@ -4,10 +4,10 @@ fun calculateCommission(
     transferAmount: Double
 ): Double {
     // Проверяем лимиты на сумму перевода
-    if (transferAmount > 150000) {
+    if (transferAmount > 150_000) {
         throw IllegalArgumentException("Превышен суточный лимит перевода")
     }
-    if (previousTransfersAmount + transferAmount > 600000) {
+    if (previousTransfersAmount + transferAmount > 600_000) {
         throw IllegalArgumentException("Превышен месячный лимит перевода")
     }
 
