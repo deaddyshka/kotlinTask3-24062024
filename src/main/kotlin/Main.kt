@@ -13,7 +13,7 @@ fun calculateCommission(
 
     // Рассчитываем комиссию в зависимости от типа карты
     val commission: Double = when (cardType) {
-        "Mastercard" -> {
+        "Mastercard" -> {  
             if (previousTransfersAmount + transferAmount > 75000) {
                 transferAmount * 0.006 + 20
             } else {
