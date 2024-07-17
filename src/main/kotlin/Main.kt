@@ -3,7 +3,7 @@ fun calculateCommission(
     cardType: String = "Мир",
     previousTransfersAmount: Double = 0.0,
     transferAmount: Double
-): ouble {
+): Double {
     // Проверяем лимиты на сумму перевода
     if (transferAmount > 150_000) {
         throw IllegalArgumentException("Превышен суточный лимит перевода")
