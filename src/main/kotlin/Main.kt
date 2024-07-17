@@ -33,7 +33,6 @@ fun calculateCommission(
             throw IllegalArgumentException("Неизвестный тип карты")
         }
     }
-
     return commission
 }
 
